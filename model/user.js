@@ -5,24 +5,12 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "First name is required"],
     minlength: [2, "Enter valid first name with more than 2 characters"],
-    // validate: {
-    //   validator: function (v) {
-    //     return /^[a-zA-Z.\s]+$/;
-    //   },
-    //   message: "First name can contain only letters",
-    // },
   },
 
   lastname: {
     type: String,
     required: [true, "Last name is required"],
     minlength: [2, "Enter valid last name with more than 2 characters"],
-    // validate: {
-    //   validator: function (v) {
-    //     return /^[a-zA-Z.\s]+$/;
-    //   },
-    //   message: "Last name can contain only letters",
-    // },
   },
 
   email: {
